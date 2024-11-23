@@ -1,0 +1,48 @@
+Week 1
+Write a program to find whether the given input number is Odd.
+ 
+If the given number is odd, the program should return 2 else It should return 1.
+ 
+Note: The number passed to the program can either be negative. positive or zero. Zero should NOT be treated as Odd.
+ 
+ 
+For example:
+ 
+Input​Result
+123
+2
+456
+1
+Answer:(penalty regime: 0 %)
+Ace editor not ready. Perhaps reload page?
+Falling back to raw text area.
+import java.util.*;
+public class oddEven{
+   public static void main(String args[]) {
+       int a;
+       Scanner scanner = new Scanner(System.in);
+       a=scanner.nextInt();
+       if(a<0)
+       {
+           a=(-1)*a;
+       }
+       if(a%2==0)
+       {
+           System.out.println("1");
+       }
+       else
+       {
+           System.out.println("2");
+       }
+   }
+}
+Feedback
+Input​Expected​Got​
+123
+2
+2
+456
+1
+1
+Passed all tests!  
+ 
